@@ -143,7 +143,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>verifyText</td>
 	<td>css=div.alert.alert-danger</td>
 	<td>× This email is already in use.</td>
 </tr>
