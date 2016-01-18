@@ -176,6 +176,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=View larger map</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertElementPresent</td>
 	<td>link=For Businesses</td>
 	<td></td>
@@ -198,11 +203,6 @@
 <tr>
 	<td>assertElementPresent</td>
 	<td>//div[3]/div/div/div/h2/strong</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>link=View larger map</td>
 	<td></td>
 </tr>
 <tr>
