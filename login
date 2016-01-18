@@ -116,6 +116,133 @@
 	<td>id=phone_number</td>
 	<td>8001234567</td>
 </tr>
+<!--Аккаунт уже создан, потому проверяем на ошибку-->
+<tr>
+	<td>clickAndWait</td>
+	<td>name=acc_customer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.alert.alert-danger</td>
+	<td>× This email is already in use.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.col-sm-7 &gt; #password</td>
+	<td>tested123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password_confirm</td>
+	<td>tested123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=acc_business</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.alert.alert-danger</td>
+	<td>× This email is already in use.</td>
+</tr>
+<!--Теперь делаем логин с известными данными-->
+<tr>
+	<td>click</td>
+	<td>//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>test@markschk.ru</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>tested123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.alert.alert-success &gt; strong</td>
+	<td>Time Zone:</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>AppointmentPro.com: Book an Appointment with a Business in Your Area!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img[alt=&quot;AppointmentPro&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=For Businesses</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Help</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=About AppointmentPro</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=FAQ &amp; Help</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Contact Us</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=place</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=submit_search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=map-canvas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>class=business_lists</td>
+	<td></td>
+</tr>
 
 </tbody></table>
 </body>
