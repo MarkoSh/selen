@@ -61,6 +61,41 @@
 	<td>css=h1</td>
 	<td>NewTester NewTestovsky's Profile Settings</td>
 </tr>
+<tr>
+	<td>click</td>
+	<td>css=span.label.label-info</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.modal-footer &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>_test@markschk.ru</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.modal-footer &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://127.0.0.1:8080/customer/profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr</td>
+	<td>_test@markschk.ru</td>
+</tr>
 
 </tbody></table>
 </body>
