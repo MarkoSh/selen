@@ -243,6 +243,81 @@
 	<td>class=business_lists</td>
 	<td></td>
 </tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=About AppointmentPro</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://localhost:8080/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=FAQ &amp; Help</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://localhost:8080/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.introjs-overlay</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=modal_popup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=h1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>Tester Testovsky's Profile Settings</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=General</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=h3.panel-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.col-sm-6.row-offset-20 &gt; div.panel.panel-primary &gt; div.panel-heading &gt; h3.panel-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[2]/div/div/h3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.col-sm-12 &gt; div.panel.panel-primary &gt; div.panel-heading &gt; h3.panel-title</td>
+	<td></td>
+</tr>
 
 </tbody></table>
 </body>
