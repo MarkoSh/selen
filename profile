@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>http://localhost:8080/customer/profile</td>
+	<td>http://127.0.0.1:8080/customer/profile</td>
 	<td></td>
 </tr>
 <tr>
@@ -45,6 +45,11 @@
 	<td>click</td>
 	<td>css=button.btn.btn-primary</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.humane-jackedup.humane-jackedup-success</td>
+	<td>User Details Successfully Saved</td>
 </tr>
 
 </tbody></table>

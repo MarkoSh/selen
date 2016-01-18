@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>http://localhost:8080/</td>
+	<td>http://127.0.0.1:8080/</td>
 	<td></td>
 </tr>
 <tr>
@@ -169,16 +169,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=div.alert.alert-success &gt; strong</td>
-	<td>Time Zone:</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=button.close</td>
-	<td></td>
-</tr>
-<tr>
 	<td>assertTitle</td>
 	<td>AppointmentPro.com: Book an Appointment with a Business in Your Area!</td>
 	<td></td>
@@ -250,7 +240,7 @@
 </tr>
 <tr>
 	<td>open</td>
-	<td>http://localhost:8080/</td>
+	<td>http://127.0.0.1:8080/</td>
 	<td></td>
 </tr>
 <tr>
@@ -260,7 +250,7 @@
 </tr>
 <tr>
 	<td>open</td>
-	<td>http://localhost:8080/</td>
+	<td>http://127.0.0.1:8080/</td>
 	<td></td>
 </tr>
 <tr>
