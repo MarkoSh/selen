@@ -92,9 +92,49 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertElementPresent</td>
+	<td>css=td:contains(&quot;_test@markschk.ru&quot;)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.label.label-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=phone_number</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#form-profile-add-phone &gt; div.modal-footer &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=phone_number</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=phone_number</td>
+	<td>8007456321</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#form-profile-add-phone &gt; div.modal-footer &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://127.0.0.1:8080/customer/profile</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
-	<td>//tr</td>
-	<td>_test@markschk.ru</td>
+	<td>css=td.phone</td>
+	<td>(800) 745-6321</td>
 </tr>
 
 </tbody></table>
