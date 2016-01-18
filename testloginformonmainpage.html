@@ -11,6 +11,7 @@
 <thead>
 <tr><td rowspan="1" colspan="3">Test Login Form - we have user</td></tr>
 </thead><tbody>
+<!--Логинимся и проверяем простого кастомера-->
 <tr>
 	<td>deleteAllVisibleCookies</td>
 	<td></td>
@@ -49,7 +50,7 @@
 <tr>
 	<td>type</td>
 	<td>id=email</td>
-	<td>test@markschk.ru</td>
+	<td>customer@markschk.ru</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -94,6 +95,164 @@
 <tr>
 	<td>assertElementPresent</td>
 	<td>css=a:contains('Contact Us')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a[title=Profile]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a[title=Profile]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=li.dropdown.open</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>Customer Customsky's Profile Settings</td>
+</tr>
+<!--TODO Добавить более точную проверку, что мы на странице пользователя-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<!--Логинимся и проверяем бизнесмена-->
+<tr>
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://127.0.0.1:8080/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button:contains('Log In')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=li.dropdown.open</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.fa-facebook, i.btn-twitter, i.btn-google-plus, i.btn-yahoo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=button:contains('Sign in')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=New Customer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>businessman@markschk.ru</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>tested123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button:contains('Sign in')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>AppointmentPro.com: Book an Appointment with a Business in Your Area!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a img[src='/static/img/ap_logo.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.dropdown-toggle:contains('For Businesses')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a:contains('About AppointmentPro')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.dropdown-toggle:contains('Help')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a:contains('FAQ &amp; Help')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a:contains('Contact Us')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a[title=Profile]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a[title=Profile]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=li.dropdown.open</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>Businessman Businessberg's Profile Settings</td>
+</tr>
+<!--TODO Добавить более точную проверку, что мы на странице пользователя-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
 
