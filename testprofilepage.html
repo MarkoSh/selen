@@ -266,6 +266,48 @@
 	<td>css=td:contains('(800) 765-4321')</td>
 	<td></td>
 </tr>
+<!--Переходим в раздел настроек-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings</td>
+	<td></td>
+</tr>
+<!--Проверяем наличие всех обязательных элементов-->
+<tr>
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>Customer Customsky's Settings</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=General</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=h3.panel-title:contains('Notification Settings')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=h3.panel-title:contains('Calendar Feeds')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=h3.panel-title:contains('Other Settings')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=h3.panel-title:contains('Additional Settings')</td>
+	<td></td>
+</tr>
 
 </tbody></table>
 </body>
