@@ -140,9 +140,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>css=h1</td>
-	<td>NewCustomer NewCustomsky's Profile Settings</td>
+	<td>assertElementPresent</td>
+	<td>css=h1:contains('NewCustomer NewCustomsky's Profile Settings')</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -181,12 +181,37 @@
 	<td>test@markschk.ru</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>css=button:contains('Add this email')</td>
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>css=div:contains('The changes were successfully saved')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertElementPresent</td>
+	<td>css=td:contains('test@markschk.ru') ~ td &gt; a[title='Remove this email address']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td:contains('test@markschk.ru') ~ td &gt; a[title='Remove this email address']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
 	<td>css=td:contains('test@markschk.ru')</td>
 	<td></td>
 </tr>
