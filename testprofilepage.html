@@ -215,6 +215,57 @@
 	<td>css=td:contains('test@markschk.ru')</td>
 	<td></td>
 </tr>
+<!--Пробуем добавить новый телефон-->
+<tr>
+	<td>click</td>
+	<td>css=span:contains('Add a new Phone Number')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#modal-profile-add-phone.in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=phone_number</td>
+	<td>8007654321</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button:contains('Add this phone number')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div:contains('The changes were successfully saved')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=td:contains('(800) 765-4321') ~ td &gt; a[title='Remove this phone number']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td:contains('(800) 765-4321') ~ td &gt; a[title='Remove this phone number']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=td:contains('(800) 765-4321')</td>
+	<td></td>
+</tr>
 
 </tbody></table>
 </body>
