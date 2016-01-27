@@ -413,6 +413,7 @@
 	<td>css=button:contains('Save notification settings')</td>
 	<td></td>
 </tr>
+<!--Прочекиваем первый блок чекбоксов, с сохранением после каждого изменения-->
 <tr>
 	<td>click</td>
 	<td>id=notify_new</td>
@@ -546,6 +547,142 @@
 <tr>
 	<td>assertChecked</td>
 	<td>name=new_sms</td>
+	<td></td>
+</tr>
+<!--Прочекиваем второй блок чекбоксов, с сохранением после каждого изменения-->
+<tr>
+	<td>click</td>
+	<td>id=notify_old</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotChecked</td>
+	<td>id=notify_old</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotChecked</td>
+	<td>name=old_web</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotEditable</td>
+	<td>name=old_web</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotChecked</td>
+	<td>name=old_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotEditable</td>
+	<td>name=old_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotChecked</td>
+	<td>name=old_sms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotEditable</td>
+	<td>name=old_sms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotEditable</td>
+	<td>name=old_voice</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=notify_old</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button:contains('Save notification settings')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div:contains('At least one delivery method needs to be checked if you would like to receive notifications')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=old_web</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button:contains('Save notification settings')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div:contains('Notification Settings Were Successfully Saved')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertChecked</td>
+	<td>name=old_web</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=old_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button:contains('Save notification settings')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div:contains('Notification Settings Were Successfully Saved')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertChecked</td>
+	<td>name=old_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=old_sms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button:contains('Save notification settings')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div:contains('Notification Settings Were Successfully Saved')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertChecked</td>
+	<td>name=old_sms</td>
 	<td></td>
 </tr>
 </tbody></table>
